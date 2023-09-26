@@ -94,31 +94,46 @@ def train(args, io):
         train_pred = []
         train_true = []
         for data, label in tqdm(train_loader):
+<<<<<<< HEAD
             # print("---------label:",label.shape)
             data, label = data.to(device), label.to(device).squeeze()
             
             # print("---label:",label.shape)
             batch_size = data.size()[0]
             # print("---------data:",data.shape)#(32,1024,3)
+=======
+            data, label = data.to(device), label.to(device).squeeze()
+            batch_size = data.size()[0]
+            
+>>>>>>> d7c04e0bd9f821d9c3cc8f363286788c335b0875
             ####################
             # generate augmented sample
             ####################
             model.eval()
             data_var = Variable(data.permute(0,2,1), requires_grad=True)
+<<<<<<< HEAD
             # print("data_var:",data_var.shape)#(32,3,1024)
+=======
+>>>>>>> d7c04e0bd9f821d9c3cc8f363286788c335b0875
             logits = model(data_var)
             loss = cal_loss(logits, label, smoothing=False)
             loss.backward()
             opt.zero_grad()
             saliency = torch.sqrt(torch.mean(data_var.grad**2,1))
+<<<<<<< HEAD
             print("data:",type(data))
             print("label:",type(label))
             print("saliency:",type(saliency))
+=======
+>>>>>>> d7c04e0bd9f821d9c3cc8f363286788c335b0875
             data, label = sagemix.mix(data, label, saliency)
             model.train()
                 
             opt.zero_grad()
+<<<<<<< HEAD
             # print("data2:",data.shape)#(32,1024,3)
+=======
+>>>>>>> d7c04e0bd9f821d9c3cc8f363286788c335b0875
             logits = model(data.permute(0,2,1))
             loss = criterion(logits, label)
             loss.backward()
@@ -223,9 +238,16 @@ if __name__ == "__main__":
                         help='Model to use, [pointnet, dgcnn]')
     parser.add_argument('--data', type=str, default='MN40', metavar='N',
                         choices=['MN40', 'SONN_easy', 'SONN_hard']) #SONN_easy : OBJ_ONLY, SONN_hard : PB_T50_RS
+<<<<<<< HEAD
     parser.add_argument('--batch_size', type=int, default=32, metavar='batch_size', help='Size of batch')
     parser.add_argument('--test_batch_size', type=int, default=16, metavar='batch_size',
                         help='Size of batch')
+=======
+    parser.add_argument('--batch_size', type=int, default=32, metavar='batch_size',
+                        help='Size of batch)')
+    parser.add_argument('--test_batch_size', type=int, default=16, metavar='batch_size',
+                        help='Size of batch)')
+>>>>>>> d7c04e0bd9f821d9c3cc8f363286788c335b0875
     parser.add_argument('--epochs', type=int, default=500, metavar='N',
                         help='number of episode to train ')
     parser.add_argument('--use_sgd', type=bool, default=True,
