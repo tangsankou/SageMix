@@ -1,0 +1,14 @@
+Namespace(batch_size=32, data='MN40', dropout=0.5, emb_dims=1024, epochs=500, eval=False, exp_name='SageMix_ppp', k=20, lr=0.001, model='pointnet', model_path='', momentum=0.9, no_cuda=False, num_points=1024, seed=1, sigma=2.0, test_batch_size=16, theta=0.2, use_sgd=False)
+Using GPU : 0 from 4 devices
+Namespace(batch_size=32, data='MN40', dropout=0.5, emb_dims=1024, epochs=500, eval=False, exp_name='SageMix_ppp', k=20, lr=0.001, model='pointnet', model_path='', momentum=0.9, no_cuda=False, num_points=1024, seed=1, sigma=2.0, test_batch_size=16, theta=0.2, use_sgd=False)
+Using GPU : 0 from 1 devices
+Namespace(batch_size=32, data='MN40', dropout=0.5, emb_dims=1024, epochs=500, eval=False, exp_name='SageMix_ppp', k=20, lr=0.001, model='pointnet', model_path='', momentum=0.9, no_cuda=False, num_points=1024, seed=1, sigma=2.0, test_batch_size=16, theta=0.2, use_sgd=False)
+Using GPU : 0 from 1 devices
+Namespace(batch_size=32, data='MN40', dropout=0.5, emb_dims=1024, epochs=500, eval=False, exp_name='SageMix_ppp', k=20, lr=0.001, model='pointnet', model_path='', momentum=0.9, no_cuda=False, num_points=1024, seed=1, sigma=2.0, test_batch_size=16, theta=0.2, use_sgd=False)
+Using GPU : 0 from 1 devices
+Namespace(batch_size=32, data='MN40', dropout=0.5, emb_dims=1024, epochs=500, eval=False, exp_name='SageMix_ppp', k=20, lr=0.001, model='pointnet', model_path='', momentum=0.9, no_cuda=False, num_points=1024, seed=1, sigma=2.0, test_batch_size=16, theta=0.2, use_sgd=False)
+Using GPU : 0 from 1 devices
+Namespace(batch_size=32, data='MN40', dropout=0.5, emb_dims=1024, epochs=500, eval=False, exp_name='SageMix_ppp', k=20, lr=0.001, model='pointnet', model_path='', momentum=0.9, no_cuda=False, num_points=1024, seed=1, sigma=2.0, test_batch_size=16, theta=0.2, use_sgd=False)
+Using GPU : 0 from 1 devices
+Namespace(batch_size=32, data='MN40', dropout=0.5, emb_dims=1024, epochs=500, eval=False, exp_name='SageMix_ppp', k=20, lr=0.001, model='pointnet', model_path='', momentum=0.9, no_cuda=False, num_points=1024, seed=1, sigma=2.0, test_batch_size=16, theta=0.2, use_sgd=False)
+Using GPU : 0 from 1 devices
