@@ -122,21 +122,25 @@ def train(args, io):
             logits = model(data_var)
             loss = cal_loss(logits, label, smoothing=False)
             loss.backward()
-            grad = data_var.grad.data
+            grad = data_var.grad.data#(32,3,1024)
             opt.zero_grad()
 
+            # print("grad:",grad.shape)
             # Change gradients into spherical axis and compute r*dL/dr
-            sphere_core = torch.median(data, dim=1, keepdim=True)[0]
-            sphere_r = torch.sqrt(torch.sum(torch.square(data - sphere_core), dim=2))  # BxN
-            sphere_axis = data - sphere_core  # BxNx3
+            sphere_core = torch.median(data, dim=1, keepdim=True)[0]#(32,1,1024)
+            # print("sphere_core:",sphere_core.shape)
+            sphere_r = torch.sqrt(torch.sum(torch.square(data - sphere_core), dim=2))  # BxN(32,1024)
+            # print("sphere_r:",sphere_r.shape)
+            sphere_axis = data - sphere_core  # BxNx3(32,1024,3)
+            # print("sphere_axis:",sphere_axis.shape)
 
-            sphere_map = torch.mul(torch.sum(torch.mul(grad, sphere_axis), dim=2), torch.pow(sphere_r, args.power))
-            print("sphere_map:",sphere_map.shape)
+            sphere_map = torch.mul(torch.sum(torch.mul(grad.permute(0,2,1), sphere_axis), dim=2), torch.pow(sphere_r, args.power))
+            # print("sphere_map:",sphere_map.shape)
             # saliency_map = spherealiency.compute_saliency(data)  # Compute saliency map
-            saliency = torch.from_numpy(sphere_map).to(device)  # Convert saliency map to torch tensor
+            saliency = sphere_map.to(device)  # Convert saliency map to torch tensor
             #end
 
-            print("saliency:",saliency.shape)
+            # print("saliency:",saliency.shape)
             data, label = sagemix.mix(data, label, saliency)
             model.train()
                 

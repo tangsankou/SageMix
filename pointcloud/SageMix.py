@@ -17,7 +17,6 @@ class SageMix:
             saliency (B,N): Defaults to None.
         """        
         B, N, _ = xyz.shape
-<<<<<<< HEAD
         idxs = torch.randperm(B)#(B)
         # print("xyz:",xyz.shape)#(32,1024,3)
         # print("label:",label.shape)
@@ -39,60 +38,43 @@ class SageMix:
         for i in range(B):
             perm_new[i] = perm[i][ass[i]]#(1024,3) 存放的是混合样本中各个点的重新排列方式。
             perm_saliency[i] = saliency[idxs][i][ass[i]]#(1024)存放的是混合样本中各个点的显著性值，用于计算样本的权重
-=======
-        idxs = torch.randperm(B)
-
-        
-        #Optimal assignment in Eq.(3)
-        perm = xyz[idxs]
-        
-        _, ass = self.EMD(xyz, perm, 0.005, 500) # mapping
-        ass = ass.long()
-        perm_new = torch.zeros_like(perm).cuda()
-        perm_saliency = torch.zeros_like(saliency).cuda()
-        
-        for i in range(B):
-            perm_new[i] = perm[i][ass[i]]
-            perm_saliency[i] = saliency[idxs][i][ass[i]]
->>>>>>> d7c04e0bd9f821d9c3cc8f363286788c335b0875
         
         #####
         # Saliency-guided sequential sampling
         #####
-        #Eq.(4) in the main paper
+        # Eq.(4) in the main paper
+        # print(torch.isnan(saliency).any())
+        # print(torch.isinf(saliency).any())
+        # print(torch.count_nonzero(saliency).item())
         saliency = saliency/saliency.sum(-1, keepdim=True)
-<<<<<<< HEAD
+        # print(torch.count_nonzero(saliency).item())不是这个原因
+        ###
+        saliency = torch.clamp(saliency, min=0.0)
+        # print(torch.sum(torch.lt(saliency, 0.)).item())#main/mains:0/4514也许是这个原因,还是不行
+        
+        
+        #RuntimeError: probability tensor contains either `inf`, `nan` or element < 0
+        #上面的代码出现这个错误，也许是梯度爆炸或梯度消失造成的，换成下面的归一化操作，还是不行
+        #saliency = torch.softmax(saliency, dim=-1)
         anc_idx = torch.multinomial(saliency, 1, replacement=True)#(32,1)
         anchor_ori = xyz[torch.arange(B), anc_idx[:,0]]#(32,3)
         
         #cal distance and reweighting saliency map for Eq.(5) in the main paper
         sub = perm_new - anchor_ori[:,None,:]#(32,1024,3)
         dist = ((sub) ** 2).sum(2).sqrt()#(32,1024)
-=======
-        anc_idx = torch.multinomial(saliency, 1, replacement=True)
-        anchor_ori = xyz[torch.arange(B), anc_idx[:,0]]
-        
-        #cal distance and reweighting saliency map for Eq.(5) in the main paper
-        sub = perm_new - anchor_ori[:,None,:]
-        dist = ((sub) ** 2).sum(2).sqrt()
->>>>>>> d7c04e0bd9f821d9c3cc8f363286788c335b0875
         perm_saliency = perm_saliency * dist
         perm_saliency = perm_saliency/perm_saliency.sum(-1, keepdim=True)
+        ###
+        perm_saliency = torch.clamp(perm_saliency, min=0.0)
         
         #Eq.(5) in the main paper
-<<<<<<< HEAD
         anc_idx2 = torch.multinomial(perm_saliency, 1, replacement=True)#(32,1)
         anchor_perm = perm_new[torch.arange(B),anc_idx2[:,0]]#(32,3)
-=======
-        anc_idx2 = torch.multinomial(perm_saliency, 1, replacement=True)
-        anchor_perm = perm_new[torch.arange(B),anc_idx2[:,0]]
->>>>>>> d7c04e0bd9f821d9c3cc8f363286788c335b0875
                 
                 
         #####
         # Shape-preserving continuous Mixup
         #####
-<<<<<<< HEAD
         alpha = self.beta.sample((B,)).cuda()#(32,1)
         sub_ori = xyz - anchor_ori[:,None,:]#(32,1024,3)
         sub_ori = ((sub_ori) ** 2).sum(2).sqrt()
@@ -107,25 +89,6 @@ class SageMix:
         weight_perm = ker_weight_perm * (1-alpha)#(32,1024)
         weight = (torch.cat([weight_ori[...,None],weight_perm[...,None]],-1)) + 1e-16#(32,1024,2)
         weight = weight/weight.sum(-1)[...,None]
-=======
-        alpha = self.beta.sample((B,)).cuda()
-        sub_ori = xyz - anchor_ori[:,None,:]
-        sub_ori = ((sub_ori) ** 2).sum(2).sqrt()
-        #Eq.(6) for first sample
-        ker_weight_ori = torch.exp(-0.5 * (sub_ori ** 2) / (self.sigma ** 2))  #(M,N)
-        
-        sub_perm = perm_new - anchor_perm[:,None,:]
-        sub_perm = ((sub_perm) ** 2).sum(2).sqrt()
-        #Eq.(6) for second sample
-        ker_weight_perm = torch.exp(-0.5 * (sub_perm ** 2) / (self.sigma ** 2))  #(M,N)
-        
-        #Eq.(9)
-        weight_ori = ker_weight_ori * alpha 
-        weight_perm = ker_weight_perm * (1-alpha)
-        weight = (torch.cat([weight_ori[...,None],weight_perm[...,None]],-1)) + 1e-16
-        weight = weight/weight.sum(-1)[...,None]
-
->>>>>>> d7c04e0bd9f821d9c3cc8f363286788c335b0875
         #Eq.(8) for new sample
         x = weight[:,:,0:1] * xyz + weight[:,:,1:] * perm_new
         
@@ -137,7 +100,6 @@ class SageMix:
         label = target[:, 0, None] * label_onehot + target[:, 1, None] * label_perm_onehot 
         
         return x, label
-<<<<<<< HEAD
 
 if __name__ == "__main__":
     import argparse
@@ -157,6 +119,4 @@ if __name__ == "__main__":
     sagemix = SageMix(args, 4)
     data, label = sagemix.mix(data, label, saliency)
     print("data:",data.shape)
-=======
->>>>>>> d7c04e0bd9f821d9c3cc8f363286788c335b0875
     

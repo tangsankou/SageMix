@@ -3,13 +3,10 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-<<<<<<< HEAD
 from torch.autograd import Variable
 import torch.nn.parallel
 import torch.utils.data
 import numpy as np
-=======
->>>>>>> d7c04e0bd9f821d9c3cc8f363286788c335b0875
 
 
 def knn(x, k):
@@ -47,11 +44,7 @@ def get_graph_feature(x, k=20, idx=None):
     return feature
 
 
-<<<<<<< HEAD
 """ class PointNet(nn.Module):
-=======
-class PointNet(nn.Module):
->>>>>>> d7c04e0bd9f821d9c3cc8f363286788c335b0875
     def __init__(self, args, output_channels=40):
         super(PointNet, self).__init__()
         self.args = args
@@ -71,7 +64,6 @@ class PointNet(nn.Module):
         self.linear2 = nn.Linear(512, output_channels)
 
     def forward(self, x):
-<<<<<<< HEAD
         # print("x0:",x.shape)#(32,3,1024)/(8,3,1024)*4
         x = F.relu(self.bn1(self.conv1(x)))
         # print("x1:",x.shape)
@@ -184,12 +176,12 @@ class PointNetfeat(nn.Module):
             self.fstn = STNkd(k=64)
 
     def forward(self, x):
-        n_pts = x.size()[2]
-        trans = self.stn(x)
-        x = x.transpose(2, 1)
+        n_pts = x.size()[2]#1024
+        trans = self.stn(x)#(32,3,3)
+        x = x.transpose(2, 1)#(32,1024,3)
         x = torch.bmm(x, trans)
-        x = x.transpose(2, 1)
-        x = F.relu(self.bn1(self.conv1(x)))
+        x = x.transpose(2, 1)#(32,3,1024)
+        x = F.relu(self.bn1(self.conv1(x)))#(32,64,1024)
 
         if self.feature_transform:
             trans_feat = self.fstn(x)
@@ -226,6 +218,7 @@ class PointNet(nn.Module):
         self.relu = nn.ReLU()
 
     def forward(self, x):
+        # print("x:",x.shape)
         x, trans, trans_feat = self.feat(x)
         x = F.relu(self.bn1(self.fc1(x)))
         x = F.relu(self.bn2(self.dropout(self.fc2(x))))
@@ -247,19 +240,6 @@ def feature_transform_regularizer(trans):
     loss = torch.mean(torch.norm(torch.bmm(trans, trans.transpose(2,1)) - I, dim=(1,2), p=2))
     return loss
 
-=======
-        x = F.relu(self.bn1(self.conv1(x)))
-        x = F.relu(self.bn2(self.conv2(x)))
-        x = F.relu(self.bn3(self.conv3(x)))
-        x = F.relu(self.bn4(self.conv4(x)))
-        x = F.relu(self.bn5(self.conv5(x)))
-        x = F.adaptive_max_pool1d(x, 1).squeeze()
-        x = F.relu(self.bn6(self.linear1(x)))
-        x = self.dp1(x)
-        x = self.linear2(x)
-        return x
-
->>>>>>> d7c04e0bd9f821d9c3cc8f363286788c335b0875
 
 class DGCNN(nn.Module):
     def __init__(self, args, output_channels=40):

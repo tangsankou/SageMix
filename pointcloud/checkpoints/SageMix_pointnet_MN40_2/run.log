@@ -1,0 +1,1002 @@
+Namespace(batch_size=32, data='MN40', dropout=0.5, emb_dims=1024, epochs=500, eval=False, exp_name='SageMix_pointnet_MN40_2', k=20, lr=0.001, model='pointnet', model_path='', momentum=0.9, no_cuda=False, num_points=1024, seed=1, sigma=2.0, test_batch_size=16, theta=0.2, use_sgd=False)
+Using GPU : 0 from 1 devices
+Train 0, loss: 2.599577
+Test 0, loss: 2.513319, test acc: 0.500810, test avg acc: 0.361826, best test acc: 0.500810
+Train 1, loss: 2.044513
+Test 1, loss: 2.478029, test acc: 0.586710, test avg acc: 0.457186, best test acc: 0.586710
+Train 2, loss: 1.789031
+Test 2, loss: 2.434011, test acc: 0.587520, test avg acc: 0.469407, best test acc: 0.587520
+Train 3, loss: 1.664774
+Test 3, loss: 2.445270, test acc: 0.632901, test avg acc: 0.527512, best test acc: 0.632901
+Train 4, loss: 1.567171
+Test 4, loss: 2.252822, test acc: 0.695705, test avg acc: 0.598453, best test acc: 0.695705
+Train 5, loss: 1.475786
+Test 5, loss: 2.341559, test acc: 0.726499, test avg acc: 0.608017, best test acc: 0.726499
+Train 6, loss: 1.460501
+Test 6, loss: 2.353087, test acc: 0.673420, test avg acc: 0.586965, best test acc: 0.726499
+Train 7, loss: 1.407949
+Test 7, loss: 2.243557, test acc: 0.711507, test avg acc: 0.652419, best test acc: 0.726499
+Train 8, loss: 1.377314
+Test 8, loss: 2.146757, test acc: 0.777553, test avg acc: 0.702128, best test acc: 0.777553
+Train 9, loss: 1.358148
+Test 9, loss: 2.178683, test acc: 0.762156, test avg acc: 0.684279, best test acc: 0.777553
+Train 10, loss: 1.331656
+Test 10, loss: 2.196583, test acc: 0.758509, test avg acc: 0.710535, best test acc: 0.777553
+Train 11, loss: 1.304304
+Test 11, loss: 2.142796, test acc: 0.778363, test avg acc: 0.694529, best test acc: 0.778363
+Train 12, loss: 1.315672
+Test 12, loss: 2.229393, test acc: 0.754457, test avg acc: 0.680581, best test acc: 0.778363
+Train 13, loss: 1.274223
+Test 13, loss: 2.192666, test acc: 0.809562, test avg acc: 0.754006, best test acc: 0.809562
+Train 14, loss: 1.256023
+Test 14, loss: 2.127902, test acc: 0.794165, test avg acc: 0.727384, best test acc: 0.809562
+Train 15, loss: 1.265760
+Test 15, loss: 2.121928, test acc: 0.812399, test avg acc: 0.726791, best test acc: 0.812399
+Train 16, loss: 1.255722
+Test 16, loss: 2.161234, test acc: 0.808752, test avg acc: 0.738837, best test acc: 0.812399
+Train 17, loss: 1.208492
+Test 17, loss: 2.165986, test acc: 0.810373, test avg acc: 0.735977, best test acc: 0.812399
+Train 18, loss: 1.220014
+Test 18, loss: 2.099414, test acc: 0.819287, test avg acc: 0.756395, best test acc: 0.819287
+Train 19, loss: 1.204867
+Test 19, loss: 2.093450, test acc: 0.830632, test avg acc: 0.770128, best test acc: 0.830632
+Train 20, loss: 1.198873
+Test 20, loss: 2.133234, test acc: 0.833063, test avg acc: 0.765169, best test acc: 0.833063
+Train 21, loss: 1.183118
+Test 21, loss: 2.166014, test acc: 0.828201, test avg acc: 0.744622, best test acc: 0.833063
+Train 22, loss: 1.163222
+Test 22, loss: 2.168541, test acc: 0.799838, test avg acc: 0.733919, best test acc: 0.833063
+Train 23, loss: 1.178993
+Test 23, loss: 2.177068, test acc: 0.845624, test avg acc: 0.788971, best test acc: 0.845624
+Train 24, loss: 1.178336
+Test 24, loss: 2.056145, test acc: 0.837520, test avg acc: 0.765640, best test acc: 0.845624
+Train 25, loss: 1.154777
+Test 25, loss: 2.060295, test acc: 0.821718, test avg acc: 0.760110, best test acc: 0.845624
+Train 26, loss: 1.146682
+Test 26, loss: 2.251108, test acc: 0.806321, test avg acc: 0.736442, best test acc: 0.845624
+Train 27, loss: 1.147355
+Test 27, loss: 2.126004, test acc: 0.817666, test avg acc: 0.763477, best test acc: 0.845624
+Train 28, loss: 1.159341
+Test 28, loss: 2.144418, test acc: 0.858590, test avg acc: 0.800465, best test acc: 0.858590
+Train 29, loss: 1.138379
+Test 29, loss: 2.075797, test acc: 0.856564, test avg acc: 0.779052, best test acc: 0.858590
+Train 30, loss: 1.137622
+Test 30, loss: 2.018788, test acc: 0.833874, test avg acc: 0.773826, best test acc: 0.858590
+Train 31, loss: 1.131374
+Test 31, loss: 2.143644, test acc: 0.816856, test avg acc: 0.759238, best test acc: 0.858590
+Train 32, loss: 1.112290
+Test 32, loss: 2.113941, test acc: 0.857374, test avg acc: 0.785424, best test acc: 0.858590
+Train 33, loss: 1.115031
+Test 33, loss: 2.053434, test acc: 0.843598, test avg acc: 0.794610, best test acc: 0.858590
+Train 34, loss: 1.102655
+Test 34, loss: 2.092821, test acc: 0.856969, test avg acc: 0.805052, best test acc: 0.858590
+Train 35, loss: 1.104131
+Test 35, loss: 2.092748, test acc: 0.861021, test avg acc: 0.805517, best test acc: 0.861021
+Train 36, loss: 1.092599
+Test 36, loss: 2.085797, test acc: 0.838331, test avg acc: 0.788308, best test acc: 0.861021
+Train 37, loss: 1.106712
+Test 37, loss: 2.103611, test acc: 0.852917, test avg acc: 0.790424, best test acc: 0.861021
+Train 38, loss: 1.078495
+Test 38, loss: 2.093483, test acc: 0.834684, test avg acc: 0.790593, best test acc: 0.861021
+Train 39, loss: 1.078324
+Test 39, loss: 2.124543, test acc: 0.856564, test avg acc: 0.811081, best test acc: 0.861021
+Train 40, loss: 1.094458
+Test 40, loss: 2.110134, test acc: 0.865073, test avg acc: 0.791262, best test acc: 0.865073
+Train 41, loss: 1.087572
+Test 41, loss: 2.047918, test acc: 0.848055, test avg acc: 0.789517, best test acc: 0.865073
+Train 42, loss: 1.076463
+Test 42, loss: 2.153121, test acc: 0.861426, test avg acc: 0.812581, best test acc: 0.865073
+Train 43, loss: 1.073843
+Test 43, loss: 2.139882, test acc: 0.816045, test avg acc: 0.773099, best test acc: 0.865073
+Train 44, loss: 1.066357
+Test 44, loss: 2.130974, test acc: 0.844814, test avg acc: 0.781343, best test acc: 0.865073
+Train 45, loss: 1.061400
+Test 45, loss: 2.141015, test acc: 0.838736, test avg acc: 0.776262, best test acc: 0.865073
+Train 46, loss: 1.075146
+Test 46, loss: 2.143300, test acc: 0.841167, test avg acc: 0.787163, best test acc: 0.865073
+Train 47, loss: 1.064155
+Test 47, loss: 2.103450, test acc: 0.865073, test avg acc: 0.797279, best test acc: 0.865073
+Train 48, loss: 1.079372
+Test 48, loss: 2.077340, test acc: 0.854538, test avg acc: 0.800384, best test acc: 0.865073
+Train 49, loss: 1.059456
+Test 49, loss: 2.204817, test acc: 0.860616, test avg acc: 0.801488, best test acc: 0.865073
+Train 50, loss: 1.054498
+Test 50, loss: 2.102981, test acc: 0.842382, test avg acc: 0.803093, best test acc: 0.865073
+Train 51, loss: 1.058126
+Test 51, loss: 2.128790, test acc: 0.851702, test avg acc: 0.797599, best test acc: 0.865073
+Train 52, loss: 1.059900
+Test 52, loss: 2.194536, test acc: 0.850486, test avg acc: 0.796965, best test acc: 0.865073
+Train 53, loss: 1.068387
+Test 53, loss: 2.066680, test acc: 0.863857, test avg acc: 0.799500, best test acc: 0.865073
+Train 54, loss: 1.026932
+Test 54, loss: 2.087445, test acc: 0.850486, test avg acc: 0.799279, best test acc: 0.865073
+Train 55, loss: 1.028511
+Test 55, loss: 2.100641, test acc: 0.871151, test avg acc: 0.803959, best test acc: 0.871151
+Train 56, loss: 1.066394
+Test 56, loss: 2.067182, test acc: 0.847245, test avg acc: 0.786756, best test acc: 0.871151
+Train 57, loss: 1.033348
+Test 57, loss: 2.118911, test acc: 0.858995, test avg acc: 0.809797, best test acc: 0.871151
+Train 58, loss: 1.041291
+Test 58, loss: 2.151198, test acc: 0.857374, test avg acc: 0.797512, best test acc: 0.871151
+Train 59, loss: 1.024897
+Test 59, loss: 2.121104, test acc: 0.849271, test avg acc: 0.785762, best test acc: 0.871151
+Train 60, loss: 1.064031
+Test 60, loss: 2.067233, test acc: 0.858995, test avg acc: 0.792436, best test acc: 0.871151
+Train 61, loss: 1.020563
+Test 61, loss: 2.133352, test acc: 0.855754, test avg acc: 0.788733, best test acc: 0.871151
+Train 62, loss: 1.036039
+Test 62, loss: 2.112797, test acc: 0.868720, test avg acc: 0.811267, best test acc: 0.871151
+Train 63, loss: 1.018903
+Test 63, loss: 2.084397, test acc: 0.858590, test avg acc: 0.808198, best test acc: 0.871151
+Train 64, loss: 1.037204
+Test 64, loss: 2.079808, test acc: 0.825770, test avg acc: 0.781750, best test acc: 0.871151
+Train 65, loss: 1.017655
+Test 65, loss: 2.065256, test acc: 0.857374, test avg acc: 0.803157, best test acc: 0.871151
+Train 66, loss: 1.025544
+Test 66, loss: 2.063501, test acc: 0.879660, test avg acc: 0.813012, best test acc: 0.879660
+Train 67, loss: 1.016650
+Test 67, loss: 2.033836, test acc: 0.877229, test avg acc: 0.832006, best test acc: 0.879660
+Train 68, loss: 1.031535
+Test 68, loss: 2.117126, test acc: 0.860211, test avg acc: 0.796878, best test acc: 0.879660
+Train 69, loss: 1.017074
+Test 69, loss: 2.056528, test acc: 0.873582, test avg acc: 0.807971, best test acc: 0.879660
+Train 70, loss: 1.000085
+Test 70, loss: 2.190941, test acc: 0.865478, test avg acc: 0.810750, best test acc: 0.879660
+Train 71, loss: 1.016148
+Test 71, loss: 2.035703, test acc: 0.867504, test avg acc: 0.808692, best test acc: 0.879660
+Train 72, loss: 1.012640
+Test 72, loss: 2.126717, test acc: 0.864263, test avg acc: 0.816279, best test acc: 0.879660
+Train 73, loss: 1.016675
+Test 73, loss: 2.122193, test acc: 0.862642, test avg acc: 0.812058, best test acc: 0.879660
+Train 74, loss: 1.038714
+Test 74, loss: 2.119216, test acc: 0.862642, test avg acc: 0.816971, best test acc: 0.879660
+Train 75, loss: 1.005901
+Test 75, loss: 2.014477, test acc: 0.875203, test avg acc: 0.805890, best test acc: 0.879660
+Train 76, loss: 0.986560
+Test 76, loss: 2.121170, test acc: 0.854538, test avg acc: 0.806785, best test acc: 0.879660
+Train 77, loss: 0.997870
+Test 77, loss: 2.063296, test acc: 0.865073, test avg acc: 0.814087, best test acc: 0.879660
+Train 78, loss: 1.015259
+Test 78, loss: 2.067456, test acc: 0.860211, test avg acc: 0.814913, best test acc: 0.879660
+Train 79, loss: 1.014898
+Test 79, loss: 2.083911, test acc: 0.859400, test avg acc: 0.819029, best test acc: 0.879660
+Train 80, loss: 0.994286
+Test 80, loss: 2.142709, test acc: 0.862237, test avg acc: 0.798959, best test acc: 0.879660
+Train 81, loss: 1.001136
+Test 81, loss: 2.083392, test acc: 0.865478, test avg acc: 0.823837, best test acc: 0.879660
+Train 82, loss: 0.997647
+Test 82, loss: 2.076974, test acc: 0.862237, test avg acc: 0.808401, best test acc: 0.879660
+Train 83, loss: 1.014325
+Test 83, loss: 2.072564, test acc: 0.856564, test avg acc: 0.804320, best test acc: 0.879660
+Train 84, loss: 0.990471
+Test 84, loss: 2.080692, test acc: 0.871556, test avg acc: 0.821349, best test acc: 0.879660
+Train 85, loss: 1.003499
+Test 85, loss: 2.104012, test acc: 0.873177, test avg acc: 0.819465, best test acc: 0.879660
+Train 86, loss: 0.998764
+Test 86, loss: 2.057793, test acc: 0.876823, test avg acc: 0.814262, best test acc: 0.879660
+Train 87, loss: 0.998404
+Test 87, loss: 2.091769, test acc: 0.869125, test avg acc: 0.823988, best test acc: 0.879660
+Train 88, loss: 1.010680
+Test 88, loss: 2.052598, test acc: 0.862237, test avg acc: 0.818279, best test acc: 0.879660
+Train 89, loss: 0.986618
+Test 89, loss: 2.097151, test acc: 0.860616, test avg acc: 0.810238, best test acc: 0.879660
+Train 90, loss: 0.985836
+Test 90, loss: 2.232452, test acc: 0.860616, test avg acc: 0.826436, best test acc: 0.879660
+Train 91, loss: 0.996878
+Test 91, loss: 2.124482, test acc: 0.872366, test avg acc: 0.817174, best test acc: 0.879660
+Train 92, loss: 0.998427
+Test 92, loss: 2.092625, test acc: 0.874392, test avg acc: 0.825552, best test acc: 0.879660
+Train 93, loss: 0.992392
+Test 93, loss: 2.108832, test acc: 0.873987, test avg acc: 0.829343, best test acc: 0.879660
+Train 94, loss: 0.973088
+Test 94, loss: 2.175395, test acc: 0.861426, test avg acc: 0.814465, best test acc: 0.879660
+Train 95, loss: 0.983760
+Test 95, loss: 2.017791, test acc: 0.871151, test avg acc: 0.821686, best test acc: 0.879660
+Train 96, loss: 0.991924
+Test 96, loss: 2.040289, test acc: 0.882901, test avg acc: 0.838256, best test acc: 0.882901
+Train 97, loss: 0.982994
+Test 97, loss: 2.098701, test acc: 0.879254, test avg acc: 0.819512, best test acc: 0.882901
+Train 98, loss: 0.983581
+Test 98, loss: 2.111630, test acc: 0.870746, test avg acc: 0.822500, best test acc: 0.882901
+Train 99, loss: 0.990303
+Test 99, loss: 2.165513, test acc: 0.878849, test avg acc: 0.827052, best test acc: 0.882901
+Train 100, loss: 0.968000
+Test 100, loss: 2.109031, test acc: 0.864263, test avg acc: 0.817017, best test acc: 0.882901
+Train 101, loss: 0.978164
+Test 101, loss: 2.070273, test acc: 0.864263, test avg acc: 0.806256, best test acc: 0.882901
+Train 102, loss: 0.968224
+Test 102, loss: 2.096410, test acc: 0.867909, test avg acc: 0.802558, best test acc: 0.882901
+Train 103, loss: 0.986455
+Test 103, loss: 2.130838, test acc: 0.858590, test avg acc: 0.798331, best test acc: 0.882901
+Train 104, loss: 0.997474
+Test 104, loss: 2.051374, test acc: 0.870746, test avg acc: 0.818314, best test acc: 0.882901
+Train 105, loss: 0.981296
+Test 105, loss: 2.094971, test acc: 0.865883, test avg acc: 0.803145, best test acc: 0.882901
+Train 106, loss: 0.978755
+Test 106, loss: 2.108882, test acc: 0.867099, test avg acc: 0.811529, best test acc: 0.882901
+Train 107, loss: 0.992147
+Test 107, loss: 2.114378, test acc: 0.882091, test avg acc: 0.835890, best test acc: 0.882901
+Train 108, loss: 0.965247
+Test 108, loss: 2.054824, test acc: 0.876823, test avg acc: 0.818756, best test acc: 0.882901
+Train 109, loss: 0.973109
+Test 109, loss: 2.076488, test acc: 0.876418, test avg acc: 0.829703, best test acc: 0.882901
+Train 110, loss: 0.956969
+Test 110, loss: 2.165169, test acc: 0.851702, test avg acc: 0.813924, best test acc: 0.882901
+Train 111, loss: 0.988371
+Test 111, loss: 2.134270, test acc: 0.863047, test avg acc: 0.817721, best test acc: 0.882901
+Train 112, loss: 0.963284
+Test 112, loss: 2.171832, test acc: 0.860211, test avg acc: 0.825326, best test acc: 0.882901
+Train 113, loss: 0.967047
+Test 113, loss: 2.055788, test acc: 0.855348, test avg acc: 0.800529, best test acc: 0.882901
+Train 114, loss: 0.972278
+Test 114, loss: 2.078806, test acc: 0.880470, test avg acc: 0.825262, best test acc: 0.882901
+Train 115, loss: 0.983197
+Test 115, loss: 2.152051, test acc: 0.869530, test avg acc: 0.821349, best test acc: 0.882901
+Train 116, loss: 0.949603
+Test 116, loss: 2.145749, test acc: 0.873987, test avg acc: 0.821471, best test acc: 0.882901
+Train 117, loss: 0.972763
+Test 117, loss: 2.077301, test acc: 0.873582, test avg acc: 0.830331, best test acc: 0.882901
+Train 118, loss: 0.975793
+Test 118, loss: 2.100486, test acc: 0.873582, test avg acc: 0.830936, best test acc: 0.882901
+Train 119, loss: 0.986786
+Test 119, loss: 2.107515, test acc: 0.879254, test avg acc: 0.834715, best test acc: 0.882901
+Train 120, loss: 0.977920
+Test 120, loss: 2.075790, test acc: 0.876823, test avg acc: 0.824058, best test acc: 0.882901
+Train 121, loss: 0.977011
+Test 121, loss: 2.044422, test acc: 0.885332, test avg acc: 0.831500, best test acc: 0.885332
+Train 122, loss: 0.951430
+Test 122, loss: 2.063365, test acc: 0.878444, test avg acc: 0.830395, best test acc: 0.885332
+Train 123, loss: 0.976359
+Test 123, loss: 2.125495, test acc: 0.865883, test avg acc: 0.813977, best test acc: 0.885332
+Train 124, loss: 0.964190
+Test 124, loss: 2.095194, test acc: 0.886953, test avg acc: 0.845640, best test acc: 0.886953
+Train 125, loss: 0.965915
+Test 125, loss: 2.154118, test acc: 0.860616, test avg acc: 0.824424, best test acc: 0.886953
+Train 126, loss: 0.974544
+Test 126, loss: 2.135541, test acc: 0.873987, test avg acc: 0.829907, best test acc: 0.886953
+Train 127, loss: 0.978186
+Test 127, loss: 2.154965, test acc: 0.853323, test avg acc: 0.817919, best test acc: 0.886953
+Train 128, loss: 0.975907
+Test 128, loss: 2.033553, test acc: 0.872366, test avg acc: 0.829547, best test acc: 0.886953
+Train 129, loss: 0.961583
+Test 129, loss: 2.117631, test acc: 0.872771, test avg acc: 0.833233, best test acc: 0.886953
+Train 130, loss: 0.965693
+Test 130, loss: 2.106660, test acc: 0.867909, test avg acc: 0.823692, best test acc: 0.886953
+Train 131, loss: 0.960732
+Test 131, loss: 2.086931, test acc: 0.878039, test avg acc: 0.836517, best test acc: 0.886953
+Train 132, loss: 0.954609
+Test 132, loss: 2.068751, test acc: 0.864263, test avg acc: 0.824558, best test acc: 0.886953
+Train 133, loss: 0.940461
+Test 133, loss: 2.016238, test acc: 0.877634, test avg acc: 0.828221, best test acc: 0.886953
+Train 134, loss: 0.965725
+Test 134, loss: 2.066092, test acc: 0.879254, test avg acc: 0.819012, best test acc: 0.886953
+Train 135, loss: 0.948874
+Test 135, loss: 2.072791, test acc: 0.883712, test avg acc: 0.831227, best test acc: 0.886953
+Train 136, loss: 0.938428
+Test 136, loss: 2.113261, test acc: 0.882496, test avg acc: 0.844116, best test acc: 0.886953
+Train 137, loss: 0.952190
+Test 137, loss: 2.170764, test acc: 0.864263, test avg acc: 0.810750, best test acc: 0.886953
+Train 138, loss: 0.958010
+Test 138, loss: 2.113209, test acc: 0.884522, test avg acc: 0.832959, best test acc: 0.886953
+Train 139, loss: 0.967159
+Test 139, loss: 2.127407, test acc: 0.875608, test avg acc: 0.828541, best test acc: 0.886953
+Train 140, loss: 0.972989
+Test 140, loss: 2.068700, test acc: 0.876013, test avg acc: 0.830843, best test acc: 0.886953
+Train 141, loss: 0.957405
+Test 141, loss: 2.188587, test acc: 0.843598, test avg acc: 0.816192, best test acc: 0.886953
+Train 142, loss: 0.943247
+Test 142, loss: 2.078505, test acc: 0.865073, test avg acc: 0.807605, best test acc: 0.886953
+Train 143, loss: 0.964588
+Test 143, loss: 2.049315, test acc: 0.869935, test avg acc: 0.830023, best test acc: 0.886953
+Train 144, loss: 0.940286
+Test 144, loss: 2.052126, test acc: 0.865478, test avg acc: 0.808692, best test acc: 0.886953
+Train 145, loss: 0.951863
+Test 145, loss: 2.143609, test acc: 0.861426, test avg acc: 0.806808, best test acc: 0.886953
+Train 146, loss: 0.957129
+Test 146, loss: 2.091860, test acc: 0.880875, test avg acc: 0.832680, best test acc: 0.886953
+Train 147, loss: 0.958249
+Test 147, loss: 2.112909, test acc: 0.868314, test avg acc: 0.813767, best test acc: 0.886953
+Train 148, loss: 0.954264
+Test 148, loss: 2.127419, test acc: 0.874797, test avg acc: 0.832645, best test acc: 0.886953
+Train 149, loss: 0.954435
+Test 149, loss: 2.064187, test acc: 0.870746, test avg acc: 0.826331, best test acc: 0.886953
+Train 150, loss: 0.950972
+Test 150, loss: 2.094215, test acc: 0.880470, test avg acc: 0.825174, best test acc: 0.886953
+Train 151, loss: 0.951568
+Test 151, loss: 2.047905, test acc: 0.867099, test avg acc: 0.808343, best test acc: 0.886953
+Train 152, loss: 0.944177
+Test 152, loss: 2.112467, test acc: 0.868720, test avg acc: 0.822634, best test acc: 0.886953
+Train 153, loss: 0.929446
+Test 153, loss: 2.084940, test acc: 0.885332, test avg acc: 0.836331, best test acc: 0.886953
+Train 154, loss: 0.936718
+Test 154, loss: 2.125921, test acc: 0.876013, test avg acc: 0.829581, best test acc: 0.886953
+Train 155, loss: 0.929483
+Test 155, loss: 2.057120, test acc: 0.871556, test avg acc: 0.819948, best test acc: 0.886953
+Train 156, loss: 0.947980
+Test 156, loss: 2.079620, test acc: 0.848865, test avg acc: 0.817948, best test acc: 0.886953
+Train 157, loss: 0.937178
+Test 157, loss: 2.109811, test acc: 0.869125, test avg acc: 0.834907, best test acc: 0.886953
+Train 158, loss: 0.952681
+Test 158, loss: 2.055939, test acc: 0.880875, test avg acc: 0.832163, best test acc: 0.886953
+Train 159, loss: 0.932870
+Test 159, loss: 2.072592, test acc: 0.869125, test avg acc: 0.817041, best test acc: 0.886953
+Train 160, loss: 0.950407
+Test 160, loss: 2.059124, test acc: 0.865073, test avg acc: 0.823930, best test acc: 0.886953
+Train 161, loss: 0.953524
+Test 161, loss: 2.141186, test acc: 0.884117, test avg acc: 0.839872, best test acc: 0.886953
+Train 162, loss: 0.966049
+Test 162, loss: 2.091355, test acc: 0.879660, test avg acc: 0.831047, best test acc: 0.886953
+Train 163, loss: 0.953945
+Test 163, loss: 2.126795, test acc: 0.862642, test avg acc: 0.821988, best test acc: 0.886953
+Train 164, loss: 0.942638
+Test 164, loss: 2.049410, test acc: 0.876823, test avg acc: 0.824901, best test acc: 0.886953
+Train 165, loss: 0.938803
+Test 165, loss: 2.127843, test acc: 0.876823, test avg acc: 0.830901, best test acc: 0.886953
+Train 166, loss: 0.938693
+Test 166, loss: 2.073101, test acc: 0.880065, test avg acc: 0.825227, best test acc: 0.886953
+Train 167, loss: 0.926241
+Test 167, loss: 2.127677, test acc: 0.868314, test avg acc: 0.829378, best test acc: 0.886953
+Train 168, loss: 0.948072
+Test 168, loss: 2.053018, test acc: 0.873987, test avg acc: 0.832023, best test acc: 0.886953
+Train 169, loss: 0.929313
+Test 169, loss: 1.992373, test acc: 0.880470, test avg acc: 0.832465, best test acc: 0.886953
+Train 170, loss: 0.937167
+Test 170, loss: 2.071761, test acc: 0.872366, test avg acc: 0.818669, best test acc: 0.886953
+Train 171, loss: 0.945894
+Test 171, loss: 2.026129, test acc: 0.888979, test avg acc: 0.844593, best test acc: 0.888979
+Train 172, loss: 0.939696
+Test 172, loss: 2.143182, test acc: 0.872771, test avg acc: 0.832884, best test acc: 0.888979
+Train 173, loss: 0.930483
+Test 173, loss: 2.066714, test acc: 0.873177, test avg acc: 0.829017, best test acc: 0.888979
+Train 174, loss: 0.940545
+Test 174, loss: 2.099978, test acc: 0.885332, test avg acc: 0.838959, best test acc: 0.888979
+Train 175, loss: 0.940606
+Test 175, loss: 2.142668, test acc: 0.891815, test avg acc: 0.838924, best test acc: 0.891815
+Train 176, loss: 0.929456
+Test 176, loss: 2.097415, test acc: 0.878444, test avg acc: 0.830884, best test acc: 0.891815
+Train 177, loss: 0.939637
+Test 177, loss: 2.072253, test acc: 0.884522, test avg acc: 0.835558, best test acc: 0.891815
+Train 178, loss: 0.932323
+Test 178, loss: 2.101187, test acc: 0.865478, test avg acc: 0.820349, best test acc: 0.891815
+Train 179, loss: 0.946015
+Test 179, loss: 2.112916, test acc: 0.882496, test avg acc: 0.828128, best test acc: 0.891815
+Train 180, loss: 0.942840
+Test 180, loss: 2.082979, test acc: 0.881686, test avg acc: 0.832262, best test acc: 0.891815
+Train 181, loss: 0.935211
+Test 181, loss: 2.159480, test acc: 0.880875, test avg acc: 0.826919, best test acc: 0.891815
+Train 182, loss: 0.931847
+Test 182, loss: 2.104511, test acc: 0.885737, test avg acc: 0.841215, best test acc: 0.891815
+Train 183, loss: 0.940901
+Test 183, loss: 2.139100, test acc: 0.871556, test avg acc: 0.820006, best test acc: 0.891815
+Train 184, loss: 0.944685
+Test 184, loss: 2.035958, test acc: 0.876013, test avg acc: 0.836756, best test acc: 0.891815
+Train 185, loss: 0.929403
+Test 185, loss: 2.130889, test acc: 0.879254, test avg acc: 0.828355, best test acc: 0.891815
+Train 186, loss: 0.950461
+Test 186, loss: 2.049375, test acc: 0.888169, test avg acc: 0.838006, best test acc: 0.891815
+Train 187, loss: 0.927099
+Test 187, loss: 2.146500, test acc: 0.863857, test avg acc: 0.813134, best test acc: 0.891815
+Train 188, loss: 0.928272
+Test 188, loss: 2.137434, test acc: 0.885332, test avg acc: 0.832477, best test acc: 0.891815
+Train 189, loss: 0.931307
+Test 189, loss: 2.003483, test acc: 0.887358, test avg acc: 0.832337, best test acc: 0.891815
+Train 190, loss: 0.926623
+Test 190, loss: 2.067215, test acc: 0.873582, test avg acc: 0.820041, best test acc: 0.891815
+Train 191, loss: 0.952937
+Test 191, loss: 2.103230, test acc: 0.870340, test avg acc: 0.829209, best test acc: 0.891815
+Train 192, loss: 0.934105
+Test 192, loss: 2.109658, test acc: 0.885737, test avg acc: 0.832372, best test acc: 0.891815
+Train 193, loss: 0.919851
+Test 193, loss: 2.050255, test acc: 0.885737, test avg acc: 0.841727, best test acc: 0.891815
+Train 194, loss: 0.936671
+Test 194, loss: 2.107876, test acc: 0.885737, test avg acc: 0.848174, best test acc: 0.891815
+Train 195, loss: 0.938601
+Test 195, loss: 2.046862, test acc: 0.892220, test avg acc: 0.847709, best test acc: 0.892220
+Train 196, loss: 0.915585
+Test 196, loss: 2.077628, test acc: 0.873987, test avg acc: 0.823012, best test acc: 0.892220
+Train 197, loss: 0.925790
+Test 197, loss: 2.058629, test acc: 0.873987, test avg acc: 0.835058, best test acc: 0.892220
+Train 198, loss: 0.930785
+Test 198, loss: 2.067762, test acc: 0.875608, test avg acc: 0.821680, best test acc: 0.892220
+Train 199, loss: 0.935370
+Test 199, loss: 2.146711, test acc: 0.869935, test avg acc: 0.820849, best test acc: 0.892220
+Train 200, loss: 0.942102
+Test 200, loss: 2.150117, test acc: 0.886143, test avg acc: 0.841174, best test acc: 0.892220
+Train 201, loss: 0.940078
+Test 201, loss: 2.042966, test acc: 0.881280, test avg acc: 0.828924, best test acc: 0.892220
+Train 202, loss: 0.929413
+Test 202, loss: 2.078083, test acc: 0.880470, test avg acc: 0.822378, best test acc: 0.892220
+Train 203, loss: 0.928209
+Test 203, loss: 2.085281, test acc: 0.885737, test avg acc: 0.835453, best test acc: 0.892220
+Train 204, loss: 0.940490
+Test 204, loss: 2.038796, test acc: 0.887358, test avg acc: 0.828052, best test acc: 0.892220
+Train 205, loss: 0.935428
+Test 205, loss: 2.141486, test acc: 0.876013, test avg acc: 0.809000, best test acc: 0.892220
+Train 206, loss: 0.938380
+Test 206, loss: 2.163869, test acc: 0.874392, test avg acc: 0.821093, best test acc: 0.892220
+Train 207, loss: 0.940151
+Test 207, loss: 2.044927, test acc: 0.884522, test avg acc: 0.845680, best test acc: 0.892220
+Train 208, loss: 0.931769
+Test 208, loss: 2.071190, test acc: 0.881686, test avg acc: 0.837430, best test acc: 0.892220
+Train 209, loss: 0.923490
+Test 209, loss: 2.047652, test acc: 0.888979, test avg acc: 0.840308, best test acc: 0.892220
+Train 210, loss: 0.931094
+Test 210, loss: 2.080059, test acc: 0.880065, test avg acc: 0.830686, best test acc: 0.892220
+Train 211, loss: 0.930697
+Test 211, loss: 2.186545, test acc: 0.865478, test avg acc: 0.820599, best test acc: 0.892220
+Train 212, loss: 0.937399
+Test 212, loss: 2.135034, test acc: 0.878849, test avg acc: 0.820343, best test acc: 0.892220
+Train 213, loss: 0.904777
+Test 213, loss: 2.146494, test acc: 0.886548, test avg acc: 0.842645, best test acc: 0.892220
+Train 214, loss: 0.933137
+Test 214, loss: 2.057041, test acc: 0.884522, test avg acc: 0.838384, best test acc: 0.892220
+Train 215, loss: 0.917714
+Test 215, loss: 2.041981, test acc: 0.874392, test avg acc: 0.824628, best test acc: 0.892220
+Train 216, loss: 0.917187
+Test 216, loss: 2.101337, test acc: 0.874392, test avg acc: 0.824709, best test acc: 0.892220
+Train 217, loss: 0.916747
+Test 217, loss: 2.110778, test acc: 0.874797, test avg acc: 0.830587, best test acc: 0.892220
+Train 218, loss: 0.919202
+Test 218, loss: 2.141936, test acc: 0.889384, test avg acc: 0.845297, best test acc: 0.892220
+Train 219, loss: 0.919195
+Test 219, loss: 2.058689, test acc: 0.891815, test avg acc: 0.837331, best test acc: 0.892220
+Train 220, loss: 0.933881
+Test 220, loss: 2.139385, test acc: 0.883712, test avg acc: 0.835192, best test acc: 0.892220
+Train 221, loss: 0.928332
+Test 221, loss: 2.079096, test acc: 0.882091, test avg acc: 0.823919, best test acc: 0.892220
+Train 222, loss: 0.897477
+Test 222, loss: 2.130235, test acc: 0.879660, test avg acc: 0.825808, best test acc: 0.892220
+Train 223, loss: 0.914227
+Test 223, loss: 2.119621, test acc: 0.882091, test avg acc: 0.833093, best test acc: 0.892220
+Train 224, loss: 0.925917
+Test 224, loss: 2.136673, test acc: 0.882496, test avg acc: 0.831930, best test acc: 0.892220
+Train 225, loss: 0.923659
+Test 225, loss: 2.097845, test acc: 0.874797, test avg acc: 0.800512, best test acc: 0.892220
+Train 226, loss: 0.932898
+Test 226, loss: 2.127312, test acc: 0.883306, test avg acc: 0.829872, best test acc: 0.892220
+Train 227, loss: 0.930685
+Test 227, loss: 2.089170, test acc: 0.884522, test avg acc: 0.839581, best test acc: 0.892220
+Train 228, loss: 0.910861
+Test 228, loss: 2.169163, test acc: 0.877634, test avg acc: 0.838616, best test acc: 0.892220
+Train 229, loss: 0.901554
+Test 229, loss: 2.134469, test acc: 0.873177, test avg acc: 0.829680, best test acc: 0.892220
+Train 230, loss: 0.928522
+Test 230, loss: 2.091651, test acc: 0.881280, test avg acc: 0.821674, best test acc: 0.892220
+Train 231, loss: 0.929938
+Test 231, loss: 2.142936, test acc: 0.892220, test avg acc: 0.845831, best test acc: 0.892220
+Train 232, loss: 0.909023
+Test 232, loss: 2.158849, test acc: 0.871151, test avg acc: 0.839552, best test acc: 0.892220
+Train 233, loss: 0.931327
+Test 233, loss: 2.106865, test acc: 0.878849, test avg acc: 0.832407, best test acc: 0.892220
+Train 234, loss: 0.942794
+Test 234, loss: 2.041062, test acc: 0.869530, test avg acc: 0.826273, best test acc: 0.892220
+Train 235, loss: 0.945852
+Test 235, loss: 2.107408, test acc: 0.878039, test avg acc: 0.826808, best test acc: 0.892220
+Train 236, loss: 0.917926
+Test 236, loss: 2.053462, test acc: 0.871151, test avg acc: 0.840622, best test acc: 0.892220
+Train 237, loss: 0.908593
+Test 237, loss: 2.080591, test acc: 0.879254, test avg acc: 0.833680, best test acc: 0.892220
+Train 238, loss: 0.919509
+Test 238, loss: 2.069944, test acc: 0.872366, test avg acc: 0.828738, best test acc: 0.892220
+Train 239, loss: 0.922305
+Test 239, loss: 2.131214, test acc: 0.884117, test avg acc: 0.841971, best test acc: 0.892220
+Train 240, loss: 0.936319
+Test 240, loss: 2.115547, test acc: 0.880875, test avg acc: 0.835424, best test acc: 0.892220
+Train 241, loss: 0.919054
+Test 241, loss: 2.067807, test acc: 0.879660, test avg acc: 0.838919, best test acc: 0.892220
+Train 242, loss: 0.921766
+Test 242, loss: 2.085705, test acc: 0.866694, test avg acc: 0.816837, best test acc: 0.892220
+Train 243, loss: 0.934044
+Test 243, loss: 2.091526, test acc: 0.865073, test avg acc: 0.823703, best test acc: 0.892220
+Train 244, loss: 0.918824
+Test 244, loss: 2.082748, test acc: 0.884927, test avg acc: 0.841930, best test acc: 0.892220
+Train 245, loss: 0.921711
+Test 245, loss: 2.071605, test acc: 0.867909, test avg acc: 0.822058, best test acc: 0.892220
+Train 246, loss: 0.927984
+Test 246, loss: 2.112979, test acc: 0.882496, test avg acc: 0.834738, best test acc: 0.892220
+Train 247, loss: 0.910829
+Test 247, loss: 2.197588, test acc: 0.879660, test avg acc: 0.835064, best test acc: 0.892220
+Train 248, loss: 0.910578
+Test 248, loss: 2.047762, test acc: 0.890600, test avg acc: 0.838680, best test acc: 0.892220
+Train 249, loss: 0.923057
+Test 249, loss: 2.252756, test acc: 0.877229, test avg acc: 0.839500, best test acc: 0.892220
+Train 250, loss: 0.932649
+Test 250, loss: 2.139507, test acc: 0.887358, test avg acc: 0.841674, best test acc: 0.892220
+Train 251, loss: 0.917675
+Test 251, loss: 2.137024, test acc: 0.865073, test avg acc: 0.823733, best test acc: 0.892220
+Train 252, loss: 0.918558
+Test 252, loss: 2.123425, test acc: 0.868314, test avg acc: 0.819785, best test acc: 0.892220
+Train 253, loss: 0.924052
+Test 253, loss: 2.085044, test acc: 0.868720, test avg acc: 0.824756, best test acc: 0.892220
+Train 254, loss: 0.921748
+Test 254, loss: 2.129296, test acc: 0.871961, test avg acc: 0.820110, best test acc: 0.892220
+Train 255, loss: 0.914050
+Test 255, loss: 2.221757, test acc: 0.876013, test avg acc: 0.832471, best test acc: 0.892220
+Train 256, loss: 0.918096
+Test 256, loss: 2.052660, test acc: 0.880065, test avg acc: 0.828029, best test acc: 0.892220
+Train 257, loss: 0.918094
+Test 257, loss: 2.132197, test acc: 0.886143, test avg acc: 0.846227, best test acc: 0.892220
+Train 258, loss: 0.913375
+Test 258, loss: 2.103133, test acc: 0.874797, test avg acc: 0.844936, best test acc: 0.892220
+Train 259, loss: 0.894718
+Test 259, loss: 2.184821, test acc: 0.876013, test avg acc: 0.830913, best test acc: 0.892220
+Train 260, loss: 0.905205
+Test 260, loss: 2.112211, test acc: 0.877229, test avg acc: 0.826564, best test acc: 0.892220
+Train 261, loss: 0.915311
+Test 261, loss: 2.118444, test acc: 0.885332, test avg acc: 0.840099, best test acc: 0.892220
+Train 262, loss: 0.921490
+Test 262, loss: 2.117503, test acc: 0.881686, test avg acc: 0.838017, best test acc: 0.892220
+Train 263, loss: 0.925789
+Test 263, loss: 2.116945, test acc: 0.887763, test avg acc: 0.838977, best test acc: 0.892220
+Train 264, loss: 0.930895
+Test 264, loss: 2.128336, test acc: 0.868720, test avg acc: 0.827698, best test acc: 0.892220
+Train 265, loss: 0.913906
+Test 265, loss: 2.180722, test acc: 0.878849, test avg acc: 0.844430, best test acc: 0.892220
+Train 266, loss: 0.899540
+Test 266, loss: 2.116301, test acc: 0.879254, test avg acc: 0.839349, best test acc: 0.892220
+Train 267, loss: 0.918633
+Test 267, loss: 2.136843, test acc: 0.869530, test avg acc: 0.837762, best test acc: 0.892220
+Train 268, loss: 0.909379
+Test 268, loss: 2.109260, test acc: 0.878039, test avg acc: 0.836727, best test acc: 0.892220
+Train 269, loss: 0.906163
+Test 269, loss: 2.153765, test acc: 0.879660, test avg acc: 0.820843, best test acc: 0.892220
+Train 270, loss: 0.909414
+Test 270, loss: 2.113723, test acc: 0.880470, test avg acc: 0.832093, best test acc: 0.892220
+Train 271, loss: 0.904794
+Test 271, loss: 2.136769, test acc: 0.871556, test avg acc: 0.822762, best test acc: 0.892220
+Train 272, loss: 0.897910
+Test 272, loss: 2.202158, test acc: 0.884117, test avg acc: 0.837587, best test acc: 0.892220
+Train 273, loss: 0.907257
+Test 273, loss: 2.061199, test acc: 0.889789, test avg acc: 0.840599, best test acc: 0.892220
+Train 274, loss: 0.909487
+Test 274, loss: 2.094406, test acc: 0.872771, test avg acc: 0.836081, best test acc: 0.892220
+Train 275, loss: 0.920716
+Test 275, loss: 2.090049, test acc: 0.884522, test avg acc: 0.844134, best test acc: 0.892220
+Train 276, loss: 0.914901
+Test 276, loss: 2.095054, test acc: 0.878849, test avg acc: 0.840006, best test acc: 0.892220
+Train 277, loss: 0.918177
+Test 277, loss: 2.090574, test acc: 0.893031, test avg acc: 0.840802, best test acc: 0.893031
+Train 278, loss: 0.925501
+Test 278, loss: 2.139183, test acc: 0.861426, test avg acc: 0.833238, best test acc: 0.893031
+Train 279, loss: 0.906517
+Test 279, loss: 2.128281, test acc: 0.876013, test avg acc: 0.843587, best test acc: 0.893031
+Train 280, loss: 0.924304
+Test 280, loss: 2.116747, test acc: 0.882901, test avg acc: 0.842919, best test acc: 0.893031
+Train 281, loss: 0.918610
+Test 281, loss: 2.112546, test acc: 0.879254, test avg acc: 0.810890, best test acc: 0.893031
+Train 282, loss: 0.900362
+Test 282, loss: 2.072713, test acc: 0.883306, test avg acc: 0.835052, best test acc: 0.893031
+Train 283, loss: 0.916014
+Test 283, loss: 2.153102, test acc: 0.873987, test avg acc: 0.823849, best test acc: 0.893031
+Train 284, loss: 0.890677
+Test 284, loss: 2.141111, test acc: 0.884522, test avg acc: 0.831349, best test acc: 0.893031
+Train 285, loss: 0.931379
+Test 285, loss: 2.169284, test acc: 0.863857, test avg acc: 0.822814, best test acc: 0.893031
+Train 286, loss: 0.921007
+Test 286, loss: 2.230210, test acc: 0.867909, test avg acc: 0.831355, best test acc: 0.893031
+Train 287, loss: 0.903489
+Test 287, loss: 2.199323, test acc: 0.867909, test avg acc: 0.811500, best test acc: 0.893031
+Train 288, loss: 0.920244
+Test 288, loss: 2.109482, test acc: 0.883712, test avg acc: 0.826500, best test acc: 0.893031
+Train 289, loss: 0.904059
+Test 289, loss: 2.179771, test acc: 0.856969, test avg acc: 0.820983, best test acc: 0.893031
+Train 290, loss: 0.926295
+Test 290, loss: 2.208318, test acc: 0.877229, test avg acc: 0.827709, best test acc: 0.893031
+Train 291, loss: 0.917333
+Test 291, loss: 2.081805, test acc: 0.876418, test avg acc: 0.823547, best test acc: 0.893031
+Train 292, loss: 0.894349
+Test 292, loss: 2.109196, test acc: 0.881280, test avg acc: 0.829006, best test acc: 0.893031
+Train 293, loss: 0.887549
+Test 293, loss: 2.068145, test acc: 0.898703, test avg acc: 0.847209, best test acc: 0.898703
+Train 294, loss: 0.918600
+Test 294, loss: 2.134640, test acc: 0.854943, test avg acc: 0.830814, best test acc: 0.898703
+Train 295, loss: 0.902626
+Test 295, loss: 2.114880, test acc: 0.868720, test avg acc: 0.817913, best test acc: 0.898703
+Train 296, loss: 0.906927
+Test 296, loss: 2.068317, test acc: 0.892626, test avg acc: 0.841628, best test acc: 0.898703
+Train 297, loss: 0.904578
+Test 297, loss: 2.130196, test acc: 0.888979, test avg acc: 0.846512, best test acc: 0.898703
+Train 298, loss: 0.902513
+Test 298, loss: 2.076950, test acc: 0.887763, test avg acc: 0.834081, best test acc: 0.898703
+Train 299, loss: 0.896088
+Test 299, loss: 2.180913, test acc: 0.888979, test avg acc: 0.843884, best test acc: 0.898703
+Train 300, loss: 0.898316
+Test 300, loss: 2.110668, test acc: 0.881686, test avg acc: 0.833378, best test acc: 0.898703
+Train 301, loss: 0.912931
+Test 301, loss: 2.048542, test acc: 0.872366, test avg acc: 0.828750, best test acc: 0.898703
+Train 302, loss: 0.918701
+Test 302, loss: 2.060960, test acc: 0.885332, test avg acc: 0.839924, best test acc: 0.898703
+Train 303, loss: 0.931783
+Test 303, loss: 2.084016, test acc: 0.883306, test avg acc: 0.834302, best test acc: 0.898703
+Train 304, loss: 0.918752
+Test 304, loss: 2.137212, test acc: 0.882901, test avg acc: 0.830244, best test acc: 0.898703
+Train 305, loss: 0.910043
+Test 305, loss: 2.129113, test acc: 0.867909, test avg acc: 0.807122, best test acc: 0.898703
+Train 306, loss: 0.917583
+Test 306, loss: 2.094436, test acc: 0.892626, test avg acc: 0.845180, best test acc: 0.898703
+Train 307, loss: 0.921475
+Test 307, loss: 2.096387, test acc: 0.889789, test avg acc: 0.825930, best test acc: 0.898703
+Train 308, loss: 0.909397
+Test 308, loss: 2.129057, test acc: 0.880470, test avg acc: 0.836186, best test acc: 0.898703
+Train 309, loss: 0.900819
+Test 309, loss: 2.141301, test acc: 0.870746, test avg acc: 0.815395, best test acc: 0.898703
+Train 310, loss: 0.890759
+Test 310, loss: 2.233073, test acc: 0.876013, test avg acc: 0.840174, best test acc: 0.898703
+Train 311, loss: 0.909439
+Test 311, loss: 2.112951, test acc: 0.875608, test avg acc: 0.841483, best test acc: 0.898703
+Train 312, loss: 0.895552
+Test 312, loss: 2.112760, test acc: 0.882901, test avg acc: 0.849343, best test acc: 0.898703
+Train 313, loss: 0.902732
+Test 313, loss: 2.191966, test acc: 0.878444, test avg acc: 0.830593, best test acc: 0.898703
+Train 314, loss: 0.902246
+Test 314, loss: 2.079783, test acc: 0.879660, test avg acc: 0.830756, best test acc: 0.898703
+Train 315, loss: 0.906729
+Test 315, loss: 2.078207, test acc: 0.879660, test avg acc: 0.840552, best test acc: 0.898703
+Train 316, loss: 0.915571
+Test 316, loss: 2.078760, test acc: 0.885332, test avg acc: 0.838134, best test acc: 0.898703
+Train 317, loss: 0.903296
+Test 317, loss: 2.123969, test acc: 0.890194, test avg acc: 0.841512, best test acc: 0.898703
+Train 318, loss: 0.908826
+Test 318, loss: 2.200678, test acc: 0.883712, test avg acc: 0.832250, best test acc: 0.898703
+Train 319, loss: 0.914890
+Test 319, loss: 2.084262, test acc: 0.895057, test avg acc: 0.847843, best test acc: 0.898703
+Train 320, loss: 0.914812
+Test 320, loss: 2.126883, test acc: 0.878849, test avg acc: 0.835087, best test acc: 0.898703
+Train 321, loss: 0.904633
+Test 321, loss: 2.158137, test acc: 0.888574, test avg acc: 0.838169, best test acc: 0.898703
+Train 322, loss: 0.891918
+Test 322, loss: 2.177678, test acc: 0.883306, test avg acc: 0.817017, best test acc: 0.898703
+Train 323, loss: 0.908700
+Test 323, loss: 2.141157, test acc: 0.888979, test avg acc: 0.848674, best test acc: 0.898703
+Train 324, loss: 0.889600
+Test 324, loss: 2.070217, test acc: 0.879660, test avg acc: 0.845808, best test acc: 0.898703
+Train 325, loss: 0.903401
+Test 325, loss: 2.129041, test acc: 0.888574, test avg acc: 0.833215, best test acc: 0.898703
+Train 326, loss: 0.895900
+Test 326, loss: 2.116371, test acc: 0.882496, test avg acc: 0.840058, best test acc: 0.898703
+Train 327, loss: 0.916641
+Test 327, loss: 2.153054, test acc: 0.877229, test avg acc: 0.830058, best test acc: 0.898703
+Train 328, loss: 0.905125
+Test 328, loss: 2.186949, test acc: 0.878444, test avg acc: 0.845512, best test acc: 0.898703
+Train 329, loss: 0.915988
+Test 329, loss: 2.092543, test acc: 0.883712, test avg acc: 0.835372, best test acc: 0.898703
+Train 330, loss: 0.907398
+Test 330, loss: 2.127131, test acc: 0.876418, test avg acc: 0.848674, best test acc: 0.898703
+Train 331, loss: 0.890122
+Test 331, loss: 2.077522, test acc: 0.877634, test avg acc: 0.837721, best test acc: 0.898703
+Train 332, loss: 0.919666
+Test 332, loss: 2.100471, test acc: 0.886953, test avg acc: 0.842390, best test acc: 0.898703
+Train 333, loss: 0.924964
+Test 333, loss: 2.109179, test acc: 0.885332, test avg acc: 0.838634, best test acc: 0.898703
+Train 334, loss: 0.902493
+Test 334, loss: 2.053331, test acc: 0.889384, test avg acc: 0.843256, best test acc: 0.898703
+Train 335, loss: 0.893761
+Test 335, loss: 2.143961, test acc: 0.886953, test avg acc: 0.837297, best test acc: 0.898703
+Train 336, loss: 0.899790
+Test 336, loss: 2.145329, test acc: 0.876418, test avg acc: 0.828936, best test acc: 0.898703
+Train 337, loss: 0.932060
+Test 337, loss: 2.157944, test acc: 0.878849, test avg acc: 0.822314, best test acc: 0.898703
+Train 338, loss: 0.917633
+Test 338, loss: 2.123214, test acc: 0.874797, test avg acc: 0.833395, best test acc: 0.898703
+Train 339, loss: 0.905547
+Test 339, loss: 2.115055, test acc: 0.873987, test avg acc: 0.821814, best test acc: 0.898703
+Train 340, loss: 0.911634
+Test 340, loss: 2.083996, test acc: 0.877634, test avg acc: 0.828884, best test acc: 0.898703
+Train 341, loss: 0.902235
+Test 341, loss: 2.155239, test acc: 0.870340, test avg acc: 0.824407, best test acc: 0.898703
+Train 342, loss: 0.879712
+Test 342, loss: 2.104345, test acc: 0.884117, test avg acc: 0.830750, best test acc: 0.898703
+Train 343, loss: 0.920270
+Test 343, loss: 2.107831, test acc: 0.892626, test avg acc: 0.845547, best test acc: 0.898703
+Train 344, loss: 0.889679
+Test 344, loss: 2.102022, test acc: 0.896272, test avg acc: 0.843959, best test acc: 0.898703
+Train 345, loss: 0.903337
+Test 345, loss: 2.061172, test acc: 0.888574, test avg acc: 0.845512, best test acc: 0.898703
+Train 346, loss: 0.895783
+Test 346, loss: 2.119945, test acc: 0.894652, test avg acc: 0.852081, best test acc: 0.898703
+Train 347, loss: 0.896520
+Test 347, loss: 2.145781, test acc: 0.882901, test avg acc: 0.848599, best test acc: 0.898703
+Train 348, loss: 0.887808
+Test 348, loss: 2.116828, test acc: 0.892626, test avg acc: 0.851541, best test acc: 0.898703
+Train 349, loss: 0.892601
+Test 349, loss: 2.131787, test acc: 0.879254, test avg acc: 0.843052, best test acc: 0.898703
+Train 350, loss: 0.905578
+Test 350, loss: 2.052404, test acc: 0.877229, test avg acc: 0.827791, best test acc: 0.898703
+Train 351, loss: 0.902796
+Test 351, loss: 2.052756, test acc: 0.874797, test avg acc: 0.834006, best test acc: 0.898703
+Train 352, loss: 0.894478
+Test 352, loss: 2.058763, test acc: 0.889384, test avg acc: 0.848413, best test acc: 0.898703
+Train 353, loss: 0.889186
+Test 353, loss: 2.144623, test acc: 0.884927, test avg acc: 0.841756, best test acc: 0.898703
+Train 354, loss: 0.899289
+Test 354, loss: 2.090716, test acc: 0.882496, test avg acc: 0.831000, best test acc: 0.898703
+Train 355, loss: 0.901036
+Test 355, loss: 2.146891, test acc: 0.878444, test avg acc: 0.829517, best test acc: 0.898703
+Train 356, loss: 0.897277
+Test 356, loss: 2.236147, test acc: 0.876013, test avg acc: 0.837116, best test acc: 0.898703
+Train 357, loss: 0.901524
+Test 357, loss: 2.104402, test acc: 0.892626, test avg acc: 0.845837, best test acc: 0.898703
+Train 358, loss: 0.886727
+Test 358, loss: 2.149587, test acc: 0.871151, test avg acc: 0.835663, best test acc: 0.898703
+Train 359, loss: 0.897351
+Test 359, loss: 2.074538, test acc: 0.892220, test avg acc: 0.850930, best test acc: 0.898703
+Train 360, loss: 0.890504
+Test 360, loss: 2.070796, test acc: 0.878039, test avg acc: 0.832500, best test acc: 0.898703
+Train 361, loss: 0.890808
+Test 361, loss: 2.072142, test acc: 0.886548, test avg acc: 0.843965, best test acc: 0.898703
+Train 362, loss: 0.901937
+Test 362, loss: 2.125608, test acc: 0.881686, test avg acc: 0.834047, best test acc: 0.898703
+Train 363, loss: 0.894293
+Test 363, loss: 2.080149, test acc: 0.886143, test avg acc: 0.832221, best test acc: 0.898703
+Train 364, loss: 0.892857
+Test 364, loss: 2.140519, test acc: 0.878444, test avg acc: 0.822965, best test acc: 0.898703
+Train 365, loss: 0.883049
+Test 365, loss: 2.214209, test acc: 0.876823, test avg acc: 0.846198, best test acc: 0.898703
+Train 366, loss: 0.910375
+Test 366, loss: 2.182570, test acc: 0.878039, test avg acc: 0.840012, best test acc: 0.898703
+Train 367, loss: 0.903498
+Test 367, loss: 2.266005, test acc: 0.863047, test avg acc: 0.818756, best test acc: 0.898703
+Train 368, loss: 0.896087
+Test 368, loss: 2.164924, test acc: 0.883712, test avg acc: 0.846151, best test acc: 0.898703
+Train 369, loss: 0.916352
+Test 369, loss: 2.114005, test acc: 0.886953, test avg acc: 0.846709, best test acc: 0.898703
+Train 370, loss: 0.899745
+Test 370, loss: 2.163636, test acc: 0.865883, test avg acc: 0.826541, best test acc: 0.898703
+Train 371, loss: 0.898052
+Test 371, loss: 2.074741, test acc: 0.882901, test avg acc: 0.832715, best test acc: 0.898703
+Train 372, loss: 0.907382
+Test 372, loss: 2.082504, test acc: 0.883712, test avg acc: 0.830186, best test acc: 0.898703
+Train 373, loss: 0.890260
+Test 373, loss: 2.134956, test acc: 0.887358, test avg acc: 0.836465, best test acc: 0.898703
+Train 374, loss: 0.889114
+Test 374, loss: 2.091800, test acc: 0.891410, test avg acc: 0.837052, best test acc: 0.898703
+Train 375, loss: 0.900741
+Test 375, loss: 2.145393, test acc: 0.879254, test avg acc: 0.838767, best test acc: 0.898703
+Train 376, loss: 0.883726
+Test 376, loss: 2.095100, test acc: 0.878039, test avg acc: 0.840762, best test acc: 0.898703
+Train 377, loss: 0.891623
+Test 377, loss: 2.115877, test acc: 0.882496, test avg acc: 0.842163, best test acc: 0.898703
+Train 378, loss: 0.904980
+Test 378, loss: 2.206234, test acc: 0.888574, test avg acc: 0.835384, best test acc: 0.898703
+Train 379, loss: 0.917312
+Test 379, loss: 2.139010, test acc: 0.878849, test avg acc: 0.831041, best test acc: 0.898703
+Train 380, loss: 0.890595
+Test 380, loss: 2.070265, test acc: 0.883306, test avg acc: 0.846180, best test acc: 0.898703
+Train 381, loss: 0.908548
+Test 381, loss: 2.102988, test acc: 0.884522, test avg acc: 0.847122, best test acc: 0.898703
+Train 382, loss: 0.898777
+Test 382, loss: 2.086812, test acc: 0.875608, test avg acc: 0.831994, best test acc: 0.898703
+Train 383, loss: 0.893371
+Test 383, loss: 2.187349, test acc: 0.874797, test avg acc: 0.834424, best test acc: 0.898703
+Train 384, loss: 0.899279
+Test 384, loss: 2.108985, test acc: 0.885332, test avg acc: 0.832116, best test acc: 0.898703
+Train 385, loss: 0.894793
+Test 385, loss: 2.121464, test acc: 0.881280, test avg acc: 0.834128, best test acc: 0.898703
+Train 386, loss: 0.896152
+Test 386, loss: 2.117372, test acc: 0.883306, test avg acc: 0.845378, best test acc: 0.898703
+Train 387, loss: 0.895969
+Test 387, loss: 2.120693, test acc: 0.888979, test avg acc: 0.847384, best test acc: 0.898703
+Train 388, loss: 0.905831
+Test 388, loss: 2.115892, test acc: 0.889384, test avg acc: 0.846215, best test acc: 0.898703
+Train 389, loss: 0.887560
+Test 389, loss: 2.081180, test acc: 0.890194, test avg acc: 0.848378, best test acc: 0.898703
+Train 390, loss: 0.894322
+Test 390, loss: 2.172353, test acc: 0.881686, test avg acc: 0.848093, best test acc: 0.898703
+Train 391, loss: 0.881674
+Test 391, loss: 2.155243, test acc: 0.887358, test avg acc: 0.845087, best test acc: 0.898703
+Train 392, loss: 0.892076
+Test 392, loss: 2.077836, test acc: 0.884522, test avg acc: 0.837721, best test acc: 0.898703
+Train 393, loss: 0.892062
+Test 393, loss: 2.093614, test acc: 0.883712, test avg acc: 0.845215, best test acc: 0.898703
+Train 394, loss: 0.882666
+Test 394, loss: 2.122437, test acc: 0.869935, test avg acc: 0.829297, best test acc: 0.898703
+Train 395, loss: 0.891191
+Test 395, loss: 2.052846, test acc: 0.882901, test avg acc: 0.820384, best test acc: 0.898703
+Train 396, loss: 0.910757
+Test 396, loss: 2.114835, test acc: 0.877229, test avg acc: 0.839767, best test acc: 0.898703
+Train 397, loss: 0.895020
+Test 397, loss: 2.132388, test acc: 0.888574, test avg acc: 0.840767, best test acc: 0.898703
+Train 398, loss: 0.911475
+Test 398, loss: 2.068097, test acc: 0.868720, test avg acc: 0.828151, best test acc: 0.898703
+Train 399, loss: 0.884077
+Test 399, loss: 2.166165, test acc: 0.888979, test avg acc: 0.849994, best test acc: 0.898703
+Train 400, loss: 0.895540
+Test 400, loss: 2.087662, test acc: 0.871151, test avg acc: 0.830227, best test acc: 0.898703
+Train 401, loss: 0.889806
+Test 401, loss: 2.107639, test acc: 0.882496, test avg acc: 0.827657, best test acc: 0.898703
+Train 402, loss: 0.891318
+Test 402, loss: 2.160294, test acc: 0.886953, test avg acc: 0.835506, best test acc: 0.898703
+Train 403, loss: 0.907038
+Test 403, loss: 2.111237, test acc: 0.885332, test avg acc: 0.843174, best test acc: 0.898703
+Train 404, loss: 0.883066
+Test 404, loss: 2.101024, test acc: 0.883712, test avg acc: 0.840930, best test acc: 0.898703
+Train 405, loss: 0.890510
+Test 405, loss: 2.133991, test acc: 0.876823, test avg acc: 0.829965, best test acc: 0.898703
+Train 406, loss: 0.893170
+Test 406, loss: 2.226513, test acc: 0.874797, test avg acc: 0.840651, best test acc: 0.898703
+Train 407, loss: 0.907834
+Test 407, loss: 2.078601, test acc: 0.872366, test avg acc: 0.841134, best test acc: 0.898703
+Train 408, loss: 0.886991
+Test 408, loss: 2.148963, test acc: 0.874392, test avg acc: 0.835233, best test acc: 0.898703
+Train 409, loss: 0.882445
+Test 409, loss: 2.136421, test acc: 0.871556, test avg acc: 0.825099, best test acc: 0.898703
+Train 410, loss: 0.887164
+Test 410, loss: 2.113447, test acc: 0.897488, test avg acc: 0.854419, best test acc: 0.898703
+Train 411, loss: 0.877159
+Test 411, loss: 2.055123, test acc: 0.886548, test avg acc: 0.837756, best test acc: 0.898703
+Train 412, loss: 0.892006
+Test 412, loss: 2.198598, test acc: 0.882091, test avg acc: 0.837797, best test acc: 0.898703
+Train 413, loss: 0.908796
+Test 413, loss: 2.121963, test acc: 0.884927, test avg acc: 0.829273, best test acc: 0.898703
+Train 414, loss: 0.907309
+Test 414, loss: 2.138678, test acc: 0.884117, test avg acc: 0.836587, best test acc: 0.898703
+Train 415, loss: 0.887123
+Test 415, loss: 2.050029, test acc: 0.886143, test avg acc: 0.839599, best test acc: 0.898703
+Train 416, loss: 0.886786
+Test 416, loss: 2.143916, test acc: 0.884927, test avg acc: 0.852541, best test acc: 0.898703
+Train 417, loss: 0.897441
+Test 417, loss: 2.054203, test acc: 0.891815, test avg acc: 0.851878, best test acc: 0.898703
+Train 418, loss: 0.905316
+Test 418, loss: 2.104183, test acc: 0.890194, test avg acc: 0.845343, best test acc: 0.898703
+Train 419, loss: 0.898392
+Test 419, loss: 2.070885, test acc: 0.878039, test avg acc: 0.838599, best test acc: 0.898703
+Train 420, loss: 0.890404
+Test 420, loss: 2.142409, test acc: 0.886548, test avg acc: 0.835140, best test acc: 0.898703
+Train 421, loss: 0.890972
+Test 421, loss: 2.074606, test acc: 0.882496, test avg acc: 0.838424, best test acc: 0.898703
+Train 422, loss: 0.875192
+Test 422, loss: 2.116262, test acc: 0.877634, test avg acc: 0.827599, best test acc: 0.898703
+Train 423, loss: 0.894886
+Test 423, loss: 2.125034, test acc: 0.889789, test avg acc: 0.841424, best test acc: 0.898703
+Train 424, loss: 0.887380
+Test 424, loss: 2.169519, test acc: 0.890600, test avg acc: 0.845715, best test acc: 0.898703
+Train 425, loss: 0.908810
+Test 425, loss: 2.182391, test acc: 0.880065, test avg acc: 0.839134, best test acc: 0.898703
+Train 426, loss: 0.899332
+Test 426, loss: 2.152600, test acc: 0.886143, test avg acc: 0.839035, best test acc: 0.898703
+Train 427, loss: 0.892475
+Test 427, loss: 2.133145, test acc: 0.880470, test avg acc: 0.844157, best test acc: 0.898703
+Train 428, loss: 0.898196
+Test 428, loss: 2.188310, test acc: 0.853728, test avg acc: 0.820605, best test acc: 0.898703
+Train 429, loss: 0.891801
+Test 429, loss: 2.063663, test acc: 0.887763, test avg acc: 0.843308, best test acc: 0.898703
+Train 430, loss: 0.906350
+Test 430, loss: 2.166074, test acc: 0.880470, test avg acc: 0.843663, best test acc: 0.898703
+Train 431, loss: 0.891905
+Test 431, loss: 2.065114, test acc: 0.897083, test avg acc: 0.845128, best test acc: 0.898703
+Train 432, loss: 0.897907
+Test 432, loss: 2.047857, test acc: 0.877634, test avg acc: 0.828808, best test acc: 0.898703
+Train 433, loss: 0.888516
+Test 433, loss: 2.084096, test acc: 0.895057, test avg acc: 0.848250, best test acc: 0.898703
+Train 434, loss: 0.897698
+Test 434, loss: 2.092882, test acc: 0.876418, test avg acc: 0.831262, best test acc: 0.898703
+Train 435, loss: 0.894470
+Test 435, loss: 2.079723, test acc: 0.884117, test avg acc: 0.838506, best test acc: 0.898703
+Train 436, loss: 0.891777
+Test 436, loss: 2.131788, test acc: 0.882496, test avg acc: 0.830878, best test acc: 0.898703
+Train 437, loss: 0.904396
+Test 437, loss: 2.059194, test acc: 0.876418, test avg acc: 0.827192, best test acc: 0.898703
+Train 438, loss: 0.892908
+Test 438, loss: 2.155955, test acc: 0.872771, test avg acc: 0.841221, best test acc: 0.898703
+Train 439, loss: 0.902303
+Test 439, loss: 2.109657, test acc: 0.887358, test avg acc: 0.844006, best test acc: 0.898703
+Train 440, loss: 0.891607
+Test 440, loss: 2.110183, test acc: 0.890194, test avg acc: 0.849169, best test acc: 0.898703
+Train 441, loss: 0.902308
+Test 441, loss: 2.101406, test acc: 0.880470, test avg acc: 0.832884, best test acc: 0.898703
+Train 442, loss: 0.884862
+Test 442, loss: 2.099487, test acc: 0.877634, test avg acc: 0.835122, best test acc: 0.898703
+Train 443, loss: 0.884446
+Test 443, loss: 2.137825, test acc: 0.876013, test avg acc: 0.836657, best test acc: 0.898703
+Train 444, loss: 0.908455
+Test 444, loss: 2.105675, test acc: 0.882091, test avg acc: 0.837395, best test acc: 0.898703
+Train 445, loss: 0.893494
+Test 445, loss: 2.191547, test acc: 0.878039, test avg acc: 0.828849, best test acc: 0.898703
+Train 446, loss: 0.905359
+Test 446, loss: 2.134906, test acc: 0.877634, test avg acc: 0.830221, best test acc: 0.898703
+Train 447, loss: 0.879870
+Test 447, loss: 2.155346, test acc: 0.881280, test avg acc: 0.840773, best test acc: 0.898703
+Train 448, loss: 0.884367
+Test 448, loss: 2.144964, test acc: 0.886143, test avg acc: 0.843506, best test acc: 0.898703
+Train 449, loss: 0.891520
+Test 449, loss: 2.084023, test acc: 0.889789, test avg acc: 0.846285, best test acc: 0.898703
+Train 450, loss: 0.911497
+Test 450, loss: 2.071534, test acc: 0.886143, test avg acc: 0.842099, best test acc: 0.898703
+Train 451, loss: 0.875845
+Test 451, loss: 2.062233, test acc: 0.879660, test avg acc: 0.821512, best test acc: 0.898703
+Train 452, loss: 0.880902
+Test 452, loss: 2.157625, test acc: 0.884927, test avg acc: 0.846564, best test acc: 0.898703
+Train 453, loss: 0.895435
+Test 453, loss: 2.121966, test acc: 0.877634, test avg acc: 0.840244, best test acc: 0.898703
+Train 454, loss: 0.893669
+Test 454, loss: 2.158840, test acc: 0.889789, test avg acc: 0.846017, best test acc: 0.898703
+Train 455, loss: 0.895473
+Test 455, loss: 2.142822, test acc: 0.883306, test avg acc: 0.836797, best test acc: 0.898703
+Train 456, loss: 0.889699
+Test 456, loss: 2.142695, test acc: 0.884522, test avg acc: 0.838099, best test acc: 0.898703
+Train 457, loss: 0.887961
+Test 457, loss: 2.122666, test acc: 0.888979, test avg acc: 0.844041, best test acc: 0.898703
+Train 458, loss: 0.892952
+Test 458, loss: 2.173354, test acc: 0.867909, test avg acc: 0.824523, best test acc: 0.898703
+Train 459, loss: 0.874509
+Test 459, loss: 2.207106, test acc: 0.869125, test avg acc: 0.815343, best test acc: 0.898703
+Train 460, loss: 0.882603
+Test 460, loss: 2.152587, test acc: 0.873987, test avg acc: 0.835267, best test acc: 0.898703
+Train 461, loss: 0.886935
+Test 461, loss: 2.098845, test acc: 0.875608, test avg acc: 0.825192, best test acc: 0.898703
+Train 462, loss: 0.880179
+Test 462, loss: 2.125471, test acc: 0.879254, test avg acc: 0.820169, best test acc: 0.898703
+Train 463, loss: 0.894359
+Test 463, loss: 2.069824, test acc: 0.882496, test avg acc: 0.836756, best test acc: 0.898703
+Train 464, loss: 0.899934
+Test 464, loss: 2.109896, test acc: 0.876418, test avg acc: 0.830076, best test acc: 0.898703
+Train 465, loss: 0.880283
+Test 465, loss: 2.092715, test acc: 0.895462, test avg acc: 0.849494, best test acc: 0.898703
+Train 466, loss: 0.889266
+Test 466, loss: 2.102510, test acc: 0.878444, test avg acc: 0.834000, best test acc: 0.898703
+Train 467, loss: 0.893672
+Test 467, loss: 2.179986, test acc: 0.871961, test avg acc: 0.837343, best test acc: 0.898703
+Train 468, loss: 0.887784
+Test 468, loss: 2.159867, test acc: 0.880470, test avg acc: 0.834459, best test acc: 0.898703
+Train 469, loss: 0.888012
+Test 469, loss: 2.102983, test acc: 0.891815, test avg acc: 0.853471, best test acc: 0.898703
+Train 470, loss: 0.885514
+Test 470, loss: 2.125985, test acc: 0.874392, test avg acc: 0.833581, best test acc: 0.898703
+Train 471, loss: 0.873542
+Test 471, loss: 2.163174, test acc: 0.886953, test avg acc: 0.829744, best test acc: 0.898703
+Train 472, loss: 0.883744
+Test 472, loss: 2.121741, test acc: 0.874392, test avg acc: 0.821099, best test acc: 0.898703
+Train 473, loss: 0.883628
+Test 473, loss: 2.085235, test acc: 0.892220, test avg acc: 0.842209, best test acc: 0.898703
+Train 474, loss: 0.899462
+Test 474, loss: 2.123911, test acc: 0.883712, test avg acc: 0.839297, best test acc: 0.898703
+Train 475, loss: 0.885881
+Test 475, loss: 2.167945, test acc: 0.893031, test avg acc: 0.846831, best test acc: 0.898703
+Train 476, loss: 0.886269
+Test 476, loss: 2.089876, test acc: 0.891815, test avg acc: 0.838180, best test acc: 0.898703
+Train 477, loss: 0.876836
+Test 477, loss: 2.145985, test acc: 0.879254, test avg acc: 0.826209, best test acc: 0.898703
+Train 478, loss: 0.895896
+Test 478, loss: 2.132701, test acc: 0.875608, test avg acc: 0.835733, best test acc: 0.898703
+Train 479, loss: 0.902658
+Test 479, loss: 2.053133, test acc: 0.894652, test avg acc: 0.843500, best test acc: 0.898703
+Train 480, loss: 0.886286
+Test 480, loss: 2.116324, test acc: 0.879254, test avg acc: 0.828436, best test acc: 0.898703
+Train 481, loss: 0.876389
+Test 481, loss: 2.080093, test acc: 0.882091, test avg acc: 0.839297, best test acc: 0.898703
+Train 482, loss: 0.910244
+Test 482, loss: 2.118382, test acc: 0.873987, test avg acc: 0.839302, best test acc: 0.898703
+Train 483, loss: 0.905210
+Test 483, loss: 2.165392, test acc: 0.889789, test avg acc: 0.844849, best test acc: 0.898703
+Train 484, loss: 0.888733
+Test 484, loss: 2.124259, test acc: 0.890194, test avg acc: 0.846488, best test acc: 0.898703
+Train 485, loss: 0.894820
+Test 485, loss: 2.064293, test acc: 0.881686, test avg acc: 0.829145, best test acc: 0.898703
+Train 486, loss: 0.900694
+Test 486, loss: 2.103916, test acc: 0.876418, test avg acc: 0.841355, best test acc: 0.898703
+Train 487, loss: 0.883700
+Test 487, loss: 2.080473, test acc: 0.873582, test avg acc: 0.816593, best test acc: 0.898703
+Train 488, loss: 0.899402
+Test 488, loss: 2.170661, test acc: 0.878444, test avg acc: 0.831837, best test acc: 0.898703
+Train 489, loss: 0.884725
+Test 489, loss: 2.114957, test acc: 0.875203, test avg acc: 0.829262, best test acc: 0.898703
+Train 490, loss: 0.889987
+Test 490, loss: 2.101732, test acc: 0.866694, test avg acc: 0.825215, best test acc: 0.898703
+Train 491, loss: 0.896705
+Test 491, loss: 2.115514, test acc: 0.880470, test avg acc: 0.825506, best test acc: 0.898703
+Train 492, loss: 0.894807
+Test 492, loss: 2.129721, test acc: 0.888979, test avg acc: 0.841669, best test acc: 0.898703
+Train 493, loss: 0.887601
+Test 493, loss: 2.097909, test acc: 0.883712, test avg acc: 0.829826, best test acc: 0.898703
+Train 494, loss: 0.897412
+Test 494, loss: 2.104622, test acc: 0.881280, test avg acc: 0.836744, best test acc: 0.898703
+Train 495, loss: 0.895581
+Test 495, loss: 2.145220, test acc: 0.878039, test avg acc: 0.838930, best test acc: 0.898703
+Train 496, loss: 0.880071
+Test 496, loss: 2.145583, test acc: 0.890194, test avg acc: 0.839959, best test acc: 0.898703
+Train 497, loss: 0.877398
+Test 497, loss: 2.116926, test acc: 0.882496, test avg acc: 0.826465, best test acc: 0.898703
+Train 498, loss: 0.875084
+Test 498, loss: 2.171286, test acc: 0.874392, test avg acc: 0.835477, best test acc: 0.898703
+Train 499, loss: 0.881136
+Test 499, loss: 2.143610, test acc: 0.884522, test avg acc: 0.835413, best test acc: 0.898703
